@@ -1,0 +1,59 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+   --Black: #0D114F;
+   --White: #FAFAFA;
+   --Red: #E83F5B;
+   --Ligth-blue: #E0ECFF;
+   --Blue: #3485FF;
+   --Background: #FBFCFF;
+   --Overlay: #040911;
+   --Icons-e-details: #A5B0C1;
+
+   --Grey-dark: #4D5E77;
+   --Grey-Blue: #A1B2CD;
+   --Grey-Medium: #D3D9E2;
+   --Grey-Light: #E5EAF1;
+
+   --Hover-Blue: #5699FF;
+   --Hover-Red: #EA4B65;
+   --Hover-Grey: #8794A7;
+
+   font-size: 62.5%;
+}
+
+body{
+    height: 100vh; /* divide a tela em altura olhar no F12*/
+    /*width: 50vw; divide a tela em horizontal*/
+    background: var(--Background);
+}
+
+body, button, input, textarea{
+    /* Intervalo de tempo */
+    font-size: clamp(14px, 1.6rem, 2vw);
+    font-family: 'Open Sans', sans-serif;
+    /*FONTES DO GOOLE FONTS*/
+    /*font-family: 'Poppins', sans-serif;*/
+}
+
+.content{
+    width: 65%;
+    margin: 0%;
+}
+
+.sr-only{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0%;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0, 0, 0, 0);
+    border-width: 0;
+}

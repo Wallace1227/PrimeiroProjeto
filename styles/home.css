@@ -1,0 +1,23 @@
+.content{
+    display: grid;
+    grid-template-columns: 60% 40%; /* A soma tem que dar 100%*/
+    grid-template-rows: 11.4rem 1fr; /*Vai dividir o topo e o resto e 1 fração */
+
+    grid-template-areas:
+    'header header' /* Dizendo que quer um fica para direira e o outro para esquerda */
+    'left left'
+}
+
+header{
+    grid-area: header;
+}
+
+#bg{
+    grid-area: left;
+    
+    background: url('/assets/Ilustracao.svg') no-repeat top/contain;
+}
+
+main{
+    grid-area: right;
+}
