@@ -14,10 +14,30 @@ header{
 
 #bg{
     grid-area: left;
-    
     background: url('/assets/Ilustracao.svg') no-repeat top/contain;
+    background-position-x: 0px;
+    height: 780%;
 }
 
 main{
     grid-area: right;
+
+    display: flex;
+    align-items: center;
+}
+
+main .content{
+    width: min(35.rem 100%);
+}
+
+main h2{
+    font-family: 'Poppins', sans-serif;
+    color: var(--Black);
+    font-size: clamp(20px, 5vw, 2.8rem);
+    margin-bottom: 2.4rem;
+}
+
+input{
+    border: .2px solid var(--Grey-Blue);
+    padding: 0 1.6rem;
 }

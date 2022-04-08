@@ -43,7 +43,7 @@ body, button, input, textarea{
 }
 
 .content{
-    width: 65%;
+    width: 60%;
     margin: 0%;
 }
 
@@ -56,4 +56,41 @@ body, button, input, textarea{
     overflow: hidden;
     clip-path: rect(0, 0, 0, 0);
     border-width: 0;
+}
+
+/* Input buttons*/
+input, button, .button{
+    border-radius: 8px;
+    height: 5rem;
+}
+
+button, .button{
+    font-family: 'Poppins';
+    font-weight: 500;
+    line-height: 0%; /*e bom colocar para não ficar desaliado do botão as letras*/
+
+    display: flex;
+    align-items: center; /*alinha letras com a imagem dentro do botão, alinha no meio do botão*/
+    justify-content: center; /*alinhar na horizonatal para deixar no meio do botão*/
+
+    background: var(--Blue);
+    color: var(--White);
+
+    transition: filter .7s;
+    cursor: pointer; /*Deixa a mãozinha do mouse em cima do botão*/
+}
+
+button:hover, .button:hover{
+    filter: brightness(1.2); /*Aplica um brilho quando passa o mouse em cima do botão*/
+}
+
+button > img /*Criar espassamento entre letras e imagens*/
+.button > img{
+    margin-right: 2rem;
+    width: 2rem;
+}
+
+button.outlined
+.button.outlined{
+    
 }
