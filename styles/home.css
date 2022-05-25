@@ -39,5 +39,11 @@ main h2{
 
 input{
     border: .2px solid var(--Grey-Blue);
-    padding: 0 1.6rem;
+    padding: 1.6rem;
+}
+
+/* Botão "Entrar na Sala e Criar Sala" Almentar prorpoção*/
+imput, button, .button {
+    width: 200%;
+    margin-bottom: 1.8rem;
 }

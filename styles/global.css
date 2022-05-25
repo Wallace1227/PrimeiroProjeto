@@ -90,7 +90,9 @@ button > img /*Criar espassamento entre letras e imagens*/
     width: 2rem;
 }
 
-button.outlined
+button.outlined,
 .button.outlined{
-    
+    background: var(--White);
+    color: var(--Blue);
+    border: .2rem solid var(--Blue);
 }
